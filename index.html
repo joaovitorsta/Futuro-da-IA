@@ -6,53 +6,64 @@
     <title>Destino 2049: O Futuro da Inteligência Artificial</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="fundo-esferas">
-        <div class="esfera esfera-1"></div>
-        <div class="esfera esfera-2"></div>
+    <div class="universo-glow">
+        <div class="orbe orbe-1"></div>
+        <div class="orbe orbe-2"></div>
+        <div class="orbe orbe-3"></div>
     </div>
 
-    <main class="container-principal">
-        <header class="cabecalho-jornada">
-            <div class="badge-tag">Simulador Interativo • 2049</div>
+    <div class="grid-linhas"></div>
+
+    <main class="painel-central">
+        <header class="cabecalho-imersivo">
+            <div class="badge-holo">
+                <span class="ponto-pulso"></span>
+                Simulador Temporal • 2049
+            </div>
             <h1>Você Decide o Futuro da IA</h1>
-            <p class="descricao-topo">Tome decisões estratégicas e descubra como suas escolhas moldam a realidade tecnológica e humana.</p>
+            <p class="subtitulo-holo">Navegue pelas ramificações do amanhã. Suas escolhas moldam a realidade ética, social e digital do mundo.</p>
         </header>
 
-        <section class="card-progresso" aria-label="Progresso da jornada">
-            <div class="info-progresso">
-                <span id="texto-passo">Etapa 1 de 5</span>
+        <section class="secao-progresso" aria-label="Progresso da Jornada">
+            <div class="metricas-progresso">
+                <span id="texto-passo">Etapa 01 de 05</span>
                 <span id="porcentagem-progresso">0%</span>
             </div>
-            <div class="trilho-barra">
-                <div class="preenchimento-barra" id="barra-progresso"></div>
+            <div class="trilho-progresso">
+                <div class="barra-progresso" id="barra-progresso"></div>
             </div>
         </section>
 
-        <section class="bloco-quiz" id="conteudo-quiz">
-            <div class="caixa-pergunta" id="caixa-perguntas" role="region" aria-live="polite"></div>
-            <div class="caixa-alternativas" id="caixa-alternativas"></div>
+        <section class="bloco-interativo" id="conteudo-quiz">
+            <div class="pergunta-cartao" id="caixa-perguntas" role="region" aria-live="polite"></div>
+            <div class="alternativas-grid" id="caixa-alternativas"></div>
         </section>
 
-        <section class="caixa-resultado oculto" id="caixa-resultado" role="region" aria-live="polite">
-            <div class="icone-resultado">🚀</div>
-            <div class="titulo-resultado-wrapper">
-                <h2>Sua Trajetória Consolidada em 2049</h2>
-                <p>Veja como o conjunto das suas decisões desenhou o seu destino neste futuro:</p>
+        <section class="resultado-cartao oculto" id="caixa-resultado" role="region" aria-live="polite">
+            <div class="icone-holo-container">
+                <div class="halo-externo"></div>
+                <span class="icone-resultado">⚡</span>
             </div>
-            <div class="texto-resultado" id="texto-resultado"></div>
-            <button class="botao-reiniciar" id="botao-reiniciar">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.1 12a9 9 0 0 0 15 6.7l4.4-4.7M2.5 22v-6h6M21.9 12a9 9 0 0 0-15-6.7L2.5 10"/></svg>
-                <span>Refazer Jornada Temporal</span>
-            </button>
+            <div class="resultado-texto-topo">
+                <h2>Linha Temporal Consolidada em 2049</h2>
+                <p>O reflexo exato das decisões que você tomou ao longo da simulação:</p>
+            </div>
+            <div class="resultado-corpo-caixa" id="texto-resultado"></div>
+            <div class="resultado-acoes">
+                <button class="botao-futurista" id="botao-reiniciar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.1 12a9 9 0 0 0 15 6.7l4.4-4.7M2.5 22v-6h6M21.9 12a9 9 0 0 0-15-6.7L2.5 10"/></svg>
+                    <span>Reiniciar Linha Temporal</span>
+                </button>
+            </div>
         </section>
     </main>
 
-    <footer class="rodape-autoral">
-        <p>Experiência interativa baseada em cenários de futuro ético e tecnológico.</p>
+    <footer class="rodape-sistema">
+        <p>Sistema de Simulação Prospectiva v4.9 • Todos os direitos reservados à sua escolha.</p>
     </footer>
 
     <script src="script.js"></script>
