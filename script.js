@@ -1,4 +1,4 @@
-const caixaPrincipal = document.querySelector(".caixa-principal");
+const elementoPrincipal = document.querySelector(".container-central");
 const caixaPerguntas = document.getElementById("caixa-perguntas");
 const caixaAlternativas = document.getElementById("caixa-alternativas");
 const caixaResultado = document.getElementById("caixa-resultado");
@@ -11,143 +11,144 @@ const botaoReiniciar = document.getElementById("botao-reiniciar");
 
 const perguntas = [
     {
-        enunciado: "Em pleno ano de 2049, você decide pesquisar maneiras eficientes de aplicar a inteligência artificial no seu cotidiano. Qual é o seu primeiro passo?",
+        enunciado: "Em 2049, você se depara com a necessidade de otimizar sua rotina e buscar dados importantes de forma rápida. Como você decide proceder com o uso das novas tecnologias?",
         alternativas: [
             {
-                texto: "Busco compreender como extrair dados e informações úteis com o auxílio das ferramentas inteligentes.",
-                afirmacao: "Você conseguiu utilizar a IA para buscar informações úteis com eficácia."
+                texto: "Conseguiu utilizar a IA para buscar informações úteis de maneira estratégica e consciente para o seu dia a dia.",
+                afirmacao: "Você conseguiu utilizar a IA para buscar informações úteis."
             },
             {
-                texto: "Deixo que a inteligência artificial assuma todas as minhas demandas rotineiras desde o início.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas."
+                texto: "Decido ignorar os assistentes inteligentes e tento fazer tudo de maneira totalmente analógica, sem suporte tecnológico.",
+                afirmacao: "Você optou por rejeitar o auxílio digital logo no início, isolando-se das facilidades modernas."
             }
         ]
     },
     {
-        enunciado: "Ao notar os impactos da tecnologia ao seu redor, você percebe que muitos colegas de trabalho enfrentam dilemas éticos no uso dos sistemas. Como você reage?",
+        enunciado: "Observando o impacto da automação no ambiente profissional e social, surgem diversos dilemas sobre a moralidade e o emprego correto das ferramentas digitais. Qual é o seu posicionamento?",
         alternativas: [
             {
-                texto: "Sua preocupação com as pessoas motiva a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
+                texto: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
                 afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
             },
             {
-                texto: "Prefiro focar apenas nas minhas próprias tarefas e deixar que cada um descubra seu caminho sozinho.",
-                afirmacao: "Você optou por uma postura isolada diante dos desafios coletivos da tecnologia."
+                texto: "Prefiro concentrar meus esforços apenas nas minhas próprias tarefas, sem me envolver com discussões coletivas sobre ética tecnológica.",
+                afirmacao: "Você adotou uma postura individualista frente aos dilemas éticos da sociedade."
             }
         ]
     },
     {
-        enunciado: "Analisando o cenário ao seu redor, você repara que diversas pessoas ao seu redor ainda sentem dificuldades com as tecnologias mais básicas.",
+        enunciado: "Caminhando pela comunidade, você percebe que muitas pessoas ao seu redor encontram barreiras severas para interagir com softwares básicos e recursos tradicionais.",
         alternativas: [
             {
                 texto: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes.",
                 afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
             },
             {
-                texto: "Acredito que quem não se atualizar sozinho deve ficar para trás no mercado.",
-                afirmacao: "Você demonstrou pouca empatia pelas dificuldades tecnológicas alheias."
+                texto: "Acredito que cada indivíduo deve buscar seu próprio aprendizado tecnológico sem a necessidade de apoio externo.",
+                afirmacao: "Você preferiu não intervir na curva de aprendizado digital daqueles que encontravam dificuldades."
             }
         ]
     },
     {
-        enunciado: "Com o passar dos meses, o volume de tarefas automatizadas cresce vertiginosamente na sua rotina profissional e pessoal.",
+        enunciado: "Com o passar dos anos em 2049, a facilidade de gerar respostas automáticas e soluções instantâneas torna-se cada vez mais tentadora no seu cotidiano.",
         alternativas: [
             {
-                texto: "Mantenho um equilíbrio rígido, usando a máquina apenas como suporte e mantendo minha autonomia criativa.",
-                afirmacao: "Você preservou sua independência intelectual frente às inovações."
+                texto: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo.",
+                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
             },
             {
-                texto: "Delego absolutamente tudo para os algoritmos sem me preocupar em verificar ou praticar os processos.",
-                afirmacao: "e agora se sente dependente da IA para tudo."
+                texto: "Estabeleço limites claros, utilizando os algoritmos estritamente como ferramentas de apoio e preservando minha autonomia cognitiva.",
+                afirmacao: "Você manteve uma postura de autonomia intelectual, resistindo à tentação da dependência tecnológica."
             }
         ]
     },
     {
-        enunciado: "Chegando ao ápice da sua jornada em 2049, qual balanço você faz sobre a sua convivência com as inteligências artificiais?",
+        enunciado: "Chegando ao marco final da sua jornada temporal em 2049, qual reflexão resume o seu legado diante da revolução da inteligência artificial?",
         alternativas: [
             {
-                texto: "A tecnologia deve caminhar lado a lado com a nossa humanidade, ética e aprendizado constante.",
-                afirmacao: "Construindo um futuro onde a tecnologia amplia as potencialidades humanas sem apagar a nossa essência."
+                texto: "A tecnologia deve servir para elevar o potencial humano, exigindo equilíbrio, empatia e constante senso crítico.",
+                afirmacao: "Consolidando um futuro onde o progresso tecnológico caminha lado a lado com a solidariedade e a autonomia humana."
             },
             {
-                texto: "Entrego o controle total da minha autonomia intelectual para os sistemas automatizados.",
-                afirmacao: "Perdendo a capacidade de agir de forma independente sem o respaldo digital."
+                texto: "Entrego o controle completo das minhas decisões diárias aos sistemas automatizados, abdicando da minha iniciativa própria.",
+                afirmacao: "Encerrando sua trajetória com total submissão operacional aos algoritmos."
             }
         ]
     }
 ];
 
-let atual = 0;
-let perguntaAtual;
-let historiaFinal = "";
+let passoAtual = 0;
+let perguntaAtiva;
+let trilhaHistorico = "";
 
-function atualizaProgresso() {
-    const total = perguntas.length;
-    const progresso = (atual / total) * 100;
-    barraProgresso.style.width = `${progresso}%`;
-    porcentagemProgresso.textContent = `${Math.round(progresso)}%`;
-    if (atual < total) {
-        textoPasso.textContent = `Etapa ${atual + 1} de ${total}`;
+function atualizarBarraProgresso() {
+    const totalEtapas = perguntas.length;
+    const calculoPorcentagem = (passoAtual / totalEtapas) * 100;
+    barraProgresso.style.width = `${calculoPorcentagem}%`;
+    porcentagemProgresso.textContent = `${Math.round(calculoPorcentagem)}%`;
+    
+    if (passoAtual < totalEtapas) {
+        textoPasso.textContent = `Etapa ${passoAtual + 1} de ${totalEtapas}`;
     } else {
-        textoPasso.textContent = "Concluído";
+        textoPasso.textContent = "Jornada Concluída";
     }
 }
 
-function mostraPergunta() {
-    if (atual >= perguntas.length) {
-        mostraResultado();
+function exibirProximaPergunta() {
+    if (passoAtual >= perguntas.length) {
+        exibirTelaResultado();
         return;
     }
 
-    atualizaProgresso();
-    perguntaAtual = perguntas[atual];
+    atualizarBarraProgresso();
+    perguntaAtiva = perguntas[passoAtual];
 
-    conteudoQuiz.classList.remove("animado");
+    conteudoQuiz.classList.remove("animar-transicao");
     void conteudoQuiz.offsetWidth;
-    conteudoQuiz.classList.add("animado");
+    conteudoQuiz.classList.add("animar-transicao");
 
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
+    caixaPerguntas.textContent = perguntaAtiva.enunciado;
     caixaAlternativas.innerHTML = "";
-    mostraAlternativas();
+    construirBotoesAlternativas();
 }
 
-function mostraAlternativas() {
-    let indice = 0;
-    for (const alternativa of perguntaAtual.alternativas) {
-        const botao = document.createElement("button");
-        botao.classList.add("opcao-btn");
+function construirBotoesAlternativas() {
+    let indiceAlternativa = 0;
+    for (const opcao of perguntaAtiva.alternativas) {
+        const botaoOpcao = document.createElement("button");
+        botaoOpcao.classList.add("botao-opcao-estilizado");
 
-        const letra = String.fromCharCode(65 + indice);
-        botao.innerHTML = `<span class="opcao-indicador">${letra}</span><span>${alternativa.texto}</span>`;
+        const identificadorLetra = String.fromCharCode(65 + indiceAlternativa);
+        botaoOpcao.innerHTML = `<span class="marcador-letra">${identificadorLetra}</span><span class="texto-opcao-conteudo">${opcao.texto}</span>`;
 
-        botao.addEventListener("click", () => respostaSelecionada(alternativa));
-        caixaAlternativas.appendChild(botao);
-        indice++;
+        botaoOpcao.addEventListener("click", () => registrarEscolha(opcao));
+        caixaAlternativas.appendChild(botaoOpcao);
+        indiceAlternativa++;
     }
 }
 
-function respostaSelecionada(opcaoSelecionada) {
-    historiaFinal += opcaoSelecionada.afirmacao + " ";
-    atual++;
-    mostraPergunta();
+function registrarEscolha(opcaoEscolhida) {
+    trilhaHistorico += opcaoEscolhida.afirmacao + " ";
+    passoAtual++;
+    exibirProximaPergunta();
 }
 
-function mostraResultado() {
-    atualizaProgresso();
-    conteudoQuiz.classList.add("oculto");
-    caixaResultado.classList.remove("oculto");
-    caixaResultado.classList.add("animado");
-    textoResultado.textContent = historiaFinal.trim();
+function exibirTelaResultado() {
+    atualizarBarraProgresso();
+    conteudoQuiz.classList.add("escondido");
+    caixaResultado.classList.remove("escondido");
+    caixaResultado.classList.add("animar-transicao");
+    textoResultado.textContent = trilhaHistorico.trim();
 }
 
-function reiniciar() {
-    atual = 0;
-    historiaFinal = "";
-    caixaResultado.classList.add("oculto");
-    conteudoQuiz.classList.remove("oculto");
-    mostraPergunta();
+function reiniciarJornada() {
+    passoAtual = 0;
+    trilhaHistorico = "";
+    caixaResultado.classList.add("escondido");
+    conteudoQuiz.classList.remove("escondido");
+    exibirProximaPergunta();
 }
 
-botaoReiniciar.addEventListener("click", reiniciar);
+botaoReiniciar.addEventListener("click", reiniciarJornada);
 
-mostraPergunta();
+exibirProximaPergunta();
