@@ -3,44 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destino 2049: O Futuro da Inteligência Artificial</title>
+    <title>Destino 2049: Caminhos da Inteligência Artificial</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="fundo-glow"></div>
-    <main class="caixa-principal">
-        <header class="cabecalho">
-            <div class="tag-categoria">Simulador do Futuro</div>
-            <h1 class="titulo-principal">Você Decide o Futuro da IA</h1>
-            <div class="container-progresso">
-                <div class="info-progresso">
-                    <span id="texto-passo">Etapa 1 de 5</span>
-                    <span id="porcentagem-progresso">0%</span>
-                </div>
-                <div class="trilho-progresso">
-                    <div class="barra-progresso" id="barra-progresso"></div>
-                </div>
-            </div>
-        </header>
+    <div class="efeito-fundo-brilho"></div>
+    <div class="particulas-container"></div>
+    
+    <header class="cabecalho-principal">
+        <div class="logo-wrapper">
+            <span class="badge-futuro">Simulador Interativo 2049</span>
+            <h1>Você Decide o Futuro da IA</h1>
+            <p class="subtitulo-topo">Navegue pelas escolhas que moldarão a sua trajetória profissional e pessoal diante da revolução tecnológica.</p>
+        </div>
+    </header>
 
-        <section class="conteudo-quiz" id="conteudo-quiz">
-            <div class="caixa-perguntas" id="caixa-perguntas"></div>
-            <div class="caixa-alternativas" id="caixa-alternativas"></div>
+    <main class="container-central">
+        <section class="painel-progresso" aria-label="Progresso da jornada">
+            <div class="status-etapa">
+                <span id="texto-passo">Etapa 1 de 5</span>
+                <span id="porcentagem-progresso">0%</span>
+            </div>
+            <div class="barra-externa-progresso">
+                <div class="barra-interna-progresso" id="barra-progresso"></div>
+            </div>
         </section>
 
-        <section class="caixa-resultado oculto" id="caixa-resultado">
-            <div class="icone-resultado">🔮</div>
-            <h2>Sua Realidade em 2049</h2>
-            <p class="texto-resultado" id="texto-resultado"></p>
-            <button class="botao-reiniciar" id="botao-reiniciar">
-                <span>Refazer Escolhas</span>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.1 12a9 9 0 0 0 15 6.7l4.4-4.7M2.5 22v-6h6M21.9 12a9 9 0 0 0-15-6.7L2.5 10"/></svg>
-            </button>
+        <section class="bloco-quiz" id="conteudo-quiz">
+            <div class="cartao-pergunta" id="caixa-perguntas" role="region" aria-live="polite"></div>
+            <div class="grupo-alternativas" id="caixa-alternativas"></div>
+        </section>
+
+        <section class="cartao-resultado oculto" id="caixa-resultado" role="region" aria-live="polite">
+            <div class="icone-destaque-resultado">🌐</div>
+            <div class="cabecalho-resultado">
+                <h2>Sua Trajetória Consolidada em 2049</h2>
+                <p>Veja abaixo como o conjunto das suas decisões moldou sua realidade neste futuro tecnológico:</p>
+            </div>
+            <div class="corpo-texto-resultado" id="texto-resultado"></div>
+            <div class="acoes-resultado">
+                <button class="botao-acao-principal" id="botao-reiniciar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.1 12a9 9 0 0 0 15 6.7l4.4-4.7M2.5 22v-6h6M21.9 12a9 9 0 0 0-15-6.7L2.5 10"/></svg>
+                    <span>Reiniciar Jornada Temporal</span>
+                </button>
+            </div>
         </section>
     </main>
+
+    <footer class="rodape-legal">
+        <p>Projeto educacional baseado em cenários prospectivos para o ano de 2049.</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
