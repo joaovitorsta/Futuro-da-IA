@@ -10,67 +10,67 @@ const botaoReiniciar = document.getElementById("botao-reiniciar");
 
 const perguntas = [
     {
-        enunciado: "Em 2049, ao buscar formas eficientes de lidar com as demandas do cotidiano, você decide como interagir com as novas tecnologias. Qual é a sua abordagem inicial?",
+        enunciado: "Em pleno ano de 2049, você precisa otimizar sua rotina e buscar dados altamente complexos. Como você decide direcionar o uso das ferramentas inteligentes?",
         alternativas: [
             {
-                texto: "Busco integrar os recursos tecnológicos de forma inteligente para otimizar minhas buscas por dados e otimizar o tempo.",
+                texto: "Aproveito o potencial analítico dos sistemas para extrair dados úteis e acelerar minhas demandas diárias.",
                 afirmacao: "Você conseguiu utilizar a IA para buscar informações úteis."
             },
             {
-                texto: "Ignoro as facilidades digitales e tento resolver tudo de forma 100% manual e tradicional desde o início.",
-                afirmacao: "Você optou por recusar qualquer suporte digital, mantendo-se totalmente analógico."
+                texto: "Delego de olhos fechados absolutamente todas as minhas obrigações e tomadas de decisão para os algoritmos.",
+                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
             }
         ]
     },
     {
-        enunciado: "Diante dos impactos da automação no ambiente profissional, surgem debates urgentes sobre a ética e a preservação do trabalho humano. Como você se posiciona?",
+        enunciado: "Observando o impacto da automação em massa, o mercado de trabalho sofre abalos profundos e dilemas morais eclodem entre os profissionais. Qual é a sua atitude?",
         alternativas: [
             {
-                texto: "Mobilizo meus colegas e lidero encontros de debate para garantir que a tecnologia seja usada de maneira justa e responsável.",
+                texto: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
                 afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética."
             },
             {
-                texto: "Prefiro focar apenas nas minhas próprias demandas, deixando que os outros trabalhadores lidem com seus próprios desafios.",
-                afirmacao: "Você adotou uma postura distante em relação aos dilemas coletivos da sociedade."
+                texto: "Mantenho-me isolado e focado exclusivamente no meu progresso individual, ignorando os dilemas coletivos.",
+                afirmacao: "Você optou por uma postura individualista diante das crises sociais geradas pela tecnologia."
             }
         ]
     },
     {
-        enunciado: "Caminhando pela comunidade, você percebe que boa parte das pessoas ainda encontra barreiras profundas para operar sistemas básicos do dia a dia.",
+        enunciado: "Caminhando pelos centros urbanos, você nota que uma enorme parcela da população ainda sofre para operar tecnologias básicas e ferramentas analógicas tradicionais.",
         alternativas: [
             {
-                texto: "Crio oficinas e tutorias voluntárias de design e pintura digital para ensinar iniciantes a dominarem as ferramentas fundamentais.",
+                texto: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes.",
                 afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes."
             },
             {
-                texto: "Acredito que cada indivíduo deve se virar por conta própria para aprender a lidar com as inovações tecnológicas.",
-                afirmacao: "Você preferiu não estender apoio pedagógico àqueles que enfrentavam barreiras tecnológicas."
+                texto: "Acredito que a adaptação natural é problema de cada um e decido não prestar nenhum tipo de suporte voluntário.",
+                afirmacao: "Você preferiu não estender auxílio educacional àqueles que enfrentavam barreiras tecnológicas."
             }
         ]
     },
     {
-        enunciado: "Com o passar dos anos, a tentação de delegar absolutamente todas as decisões cotidianas para os algoritmos torna-se imensa.",
+        enunciado: "O ecossistema digital ao seu redor evoluiu exponencialmente, trazendo facilidades extremas mas também o risco latente da inércia mental.",
         alternativas: [
             {
-                texto: "Delego cada parcela do meu raciocínio e das minhas obrigações diretamente para os sistemas automatizados.",
-                afirmacao: "Infelizmente passou a utilizar a IA para fazer todas suas tarefas e agora se sente dependente da IA para tudo."
+                texto: "Estabeleço limites rígidos, utilizando a inteligência artificial estritamente como suporte técnico e mantendo meu raciocínio ativo.",
+                afirmacao: "Você preservou sua autonomia cognitiva e pensamento crítico frente aos sistemas."
             },
             {
-                texto: "Mantenho um rigoroso filtro crítico, utilizando a tecnologia estritamente como apoio e preservando minha autonomia cognitiva.",
-                afirmacao: "Você protegeu firmemente sua independência intelectual diante dos sistemas inteligentes."
+                texto: "Permito que a máquina pense por mim em todas as esferas, abdicando completamente do esforço mental autônomo.",
+                afirmacao: "E acabou aprofundando uma dependência crônica de soluções sintéticas automatizadas."
             }
         ]
     },
     {
-        enunciado: "Ao atingir o ápice da sua jornada temporal em 2049, qual balanço define a sua relação definitiva com a inteligência artificial?",
+        enunciado: "Chegando ao marco final da sua trajetória em 2049, qual veredito define a sua coexistência com a inteligência artificial?",
         alternativas: [
             {
-                texto: "A inovação deve caminhar de mãos dadas com a empatia, a solidariedade e o pensamento crítico humano.",
-                afirmacao: "Consolidando um legado onde o avanço digital engrandece a humanidade sem apagar sua essência."
+                texto: "A tecnologia deve atuar como multiplicadora do potencial humano, guiada pela ética, empatia e constante aprendizado.",
+                afirmacao: "Consolidando um futuro equilibrado onde a humanidade e a inovação caminham em perfeita harmonia."
             },
             {
-                texto: "Entrego o controle absoluto da minha capacidade de discernimento e ação diretamente às máquinas.",
-                afirmacao: "Encerrando sua trajetória submisso ao controle operacional dos algoritmos."
+                texto: "Submeto meu livre-arbítrio por completo ao controle operacional e centralizado dos algoritmos.",
+                afirmacao: "Entregando o comando total da própria jornada à automação cega."
             }
         ]
     }
@@ -86,9 +86,11 @@ function atualizarProgresso() {
     porcentagemProgresso.textContent = `${Math.round(porcentagem)}%`;
     
     if (passoAtual < total) {
-        textoPasso.textContent = `Etapa ${passoAtual + 1} de ${total}`;
+        const numeroFormatado = String(passoAtual + 1).padStart(2, '0');
+        const totalFormatado = String(total).padStart(2, '0');
+        textoPasso.textContent = `Etapa ${numeroFormatado} de ${totalFormatado}`;
     } else {
-        textoPasso.textContent = "Jornada Concluída";
+        textoPasso.textContent = "Sincronização Concluída";
     }
 }
 
@@ -101,9 +103,9 @@ function carregarPergunta() {
     atualizarProgresso();
     const perguntaAtual = perguntas[passoAtual];
 
-    conteudoQuiz.classList.remove("animar-fade");
+    conteudoQuiz.classList.remove("animar-transicao");
     void conteudoQuiz.offsetWidth;
-    conteudoQuiz.classList.add("animar-fade");
+    conteudoQuiz.classList.add("animar-transicao");
 
     caixaPerguntas.textContent = perguntaAtual.enunciado;
     caixaAlternativas.innerHTML = "";
@@ -111,12 +113,12 @@ function carregarPergunta() {
     let indice = 0;
     for (const alternativa of perguntaAtual.alternativas) {
         const botao = document.createElement("button");
-        botao.classList.add("botao-alternativa");
+        botao.classList.add("alternativa-botao");
 
         const letra = String.fromCharCode(65 + indice);
         botao.innerHTML = `
-            <span class="indicador-letra">${letra}</span>
-            <span class="texto-alternativa">${alternativa.texto}</span>
+            <span class="alternativa-letra">${letra}</span>
+            <span class="alternativa-texto">${alternativa.texto}</span>
         `;
 
         botao.addEventListener("click", () => selecionarResposta(alternativa));
@@ -133,17 +135,17 @@ function selecionarResposta(opcao) {
 
 function mostrarResultado() {
     atualizarProgresso();
-    conteudoQuiz.classList.add("escondido");
-    caixaResultado.classList.remove("escondido");
-    caixaResultado.classList.add("animar-fade");
+    conteudoQuiz.classList.add("oculto");
+    caixaResultado.classList.remove("oculto");
+    caixaResultado.classList.add("animar-transicao");
     textoResultado.textContent = trilhaHistorico.trim();
 }
 
 function reiniciarJornada() {
     passoAtual = 0;
     trilhaHistorico = "";
-    caixaResultado.classList.add("escondido");
-    conteudoQuiz.classList.remove("escondido");
+    caixaResultado.classList.add("oculto");
+    conteudoQuiz.classList.remove("oculto");
     carregarPergunta();
 }
 
